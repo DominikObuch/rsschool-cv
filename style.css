@@ -119,6 +119,11 @@
     margin-bottom: 1rem;
 }
 
+.skills-list {
+    list-style: square;
+    margin-left: 1.5rem;
+}
+
 .footer-container{
     display: flex;
     justify-content: space-between;
