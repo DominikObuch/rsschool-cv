@@ -169,11 +169,26 @@
     margin-bottom: 0.5rem;
 }
 
-.footer-container{
+.education-item-detailed {
+    margin-bottom: 2rem;
+}
+
+.footer {
+    width: 95%;
+    max-width: var(--max-width);
+    background-color: var(--white);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 .footer-link {
