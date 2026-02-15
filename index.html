@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dominik Obuch - CV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    <header class="header">
+        <div class="header-container">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#introduction" class="nav-link">About Me</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#code-example" class="nav-link">Code Example</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                </ul>
+            </nav>
+            <div class="hero">
+                <h1 class="main-title">Dominik Obuch</h1>
+                <div class="header-info">
+                    <img src="https://avatars.githubusercontent.com/u/38918428?v=4" alt="Dominik Obuch" class="avatar">
+                    <div id="contacts" class="contacts-section">
+                        <h2 class="section-title">Contact Information</h2>
+                        <ul class="contacts-list">
+                            <li class="contact-item">Email: <a href="mailto:dominik.obuch@wp.pl" class="contact-link">dominik.obuch@wp.pl</a></li>
+                            <li class="contact-item">GitHub: <a href="https://github.com/DominikObuch" target="_blank" class="contact-link">DominikObuch</a></li>
+                            <li class="contact-item">Discord: billieq</li>
+                            <li class="contact-item">Location: Wrocław, Poland</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main-content">
+        <section id="introduction" class="content-section">
+            <h2 class="section-title">Self-Introduction</h2>
+            <p class="section-text">
+                I am a passionate Full Stack Developer currently working at Ulan Software. With a strong foundation in modern web technologies like Vue.js 3 and TypeScript, 
+                I focus on building efficient, scalable, and user-centric applications. My experience spans across both frontend and backend development, 
+                allowing me to bridge the gap between design and server-side logic effectively.
+            </p>
+        </section>
+
+        <section id="skills" class="content-section">
+            <h2 class="section-title">Skills</h2>
+            <ul class="skills-list">
+                <li class="skill-item"><strong>Frontend:</strong> TypeScript, Vue 3, Nuxt 3, Vue Router, Pinia, JavaScript, HTML, CSS/Sass, Tailwind, Material UI, Vuetify 3, Responsive Web Design (RWD)</li>
+                <li class="skill-item"><strong>Backend:</strong> Node.js, Express.js, MongoDB, MySQL, NestJS</li>
+                <li class="skill-item"><strong>Tools & DevOps:</strong> Git, Vite, Docker, GitLab</li>
+                <li class="skill-item"><strong>Methodologies:</strong> Agile, Scrum</li>
+            </ul>
+        </section>
+
+        <section id="code-example" class="content-section">
+            <h2 class="section-title">Code Example</h2>
+            <p class="section-text">
+                Solution for <a href="https://www.codewars.com/users/DominikObuch" target="_blank" class="contact-link">Sum of Digits / Digital Root</a> on Codewars:
+            </p>
+            <pre class="code-block"><code class="code-snippet">function digital_root(n) {
+  let ans = n.toString().split("").reduce((acc,num)=>{return acc + +num },0)
+  if(ans.toString().length>1){
+    return digital_root(ans)
+  }
+  return ans
+}</code></pre>
+        </section>
+
+        <section id="projects" class="content-section">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="job-item">
+                <h3 class="subsection-title">Full Stack Developer - Ulan Software</h3>
+                <p class="job-meta">Feb 2025 – Present | Wrocław, Poland</p>
+                <ul class="job-details">
+                    <li>Developed the user interface using <strong>Vue.js 3</strong>.</li>
+                    <li>Implemented application logic using <strong>TypeScript</strong> and JavaScript.</li>
+                    <li>Developed and optimized components in Vue.js (Vue 3, Vuetify 3, Composition API).</li>
+                    <li>Developed back-end application logic and <strong>REST API</strong> using PHP, including validation and authentication.</li>
+                    <li>Created and optimized <strong>MySQL</strong> database queries and designed table structures.</li>
+                </ul>
+            </div>
+
+            <h2 class="section-title">Projects</h2>
+            <ul class="projects-list">
+                <li class="project-item">
+                    <strong class="project-name">asd-kamieniarstwo</strong> - Professional website for stoneware services.
+                    <br>
+                    Source Code: <a href="https://github.com/DominikObuch/asd-kamieniarstwo" target="_blank" class="project-link">Repo Link</a>
+                </li>
+                <li class="project-item">
+                    <strong class="project-name">Flashcards </strong> - A learning tool for efficient knowledge retention. (I created Backend for this one and my friends created the Frontend)
+                    <br>
+                    Source Code: <a href="https://github.com/Revixxd/FlashCards" target="_blank" class="project-link">Repo Link</a>
+                </li>
+                <li class="project-item">
+                    <strong class="project-name">c0deyourfuture</strong> - Project for learning programming, which I created for my friends who are learning to code.
+                    <br>
+                    Source Code: <a href="https://github.com/DominikObuch/c0deyourfuture" target="_blank" class="project-link">Repo Link</a>
+                </li>
+            </ul>
+        </section>
+
+        <section id="education" class="content-section">
+            <h2 class="section-title">Education</h2>
+            <div class="education-item-detailed">
+                <h3 class="subsection-title">Akademia Techniczno-Informatyczna w Naukach Stosowanych</h3>
+                <p class="education-meta">Bachelor of Science (BSc) in Computer Science | Oct 2022 – Sep 2026</p>
+            </div>
+            
+            <h2 class="section-title">English Proficiency</h2>
+            <p class="section-text">
+                I am proficient in English, particularly in technical contexts. I have extensive experience reading documentation, 
+                participating in professional communication in English, and collaborating with international teams. My English skills enable me to effectively understand and utilize technical resources.
+            </p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="https://github.com/DominikObuch" target="_blank" class="footer-link">My GitHub Profile</a>
+                <span class="year">2026</span>
+            </div>
+            <a href="https://rs.school/courses/short-track" target="_blank" class="rs-logo-link">
+                <img src="./rs-school-logo.svg" alt="RS School Logo" class="rs-logo">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

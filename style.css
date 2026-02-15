@@ -1,0 +1,245 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #34495e;
+    --accent-color: #3498db;
+    --bg-color: #f4f7f6;
+    --text-color: #333;
+    --white: #fff;
+    --max-width: 900px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.header, .main-content, .footer {
+    width: 95%;
+    max-width: var(--max-width);
+    background-color: var(--white);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.header {
+    border-top: 5px solid var(--accent-color);
+    margin-top: 2rem;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+    display: inline-block;
+}
+
+.nav-link:hover {
+    color: var(--accent-color);
+    transform: translateY(-2px);
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.main-title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+}
+
+.header-info {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    text-align: left;
+}
+
+@media (max-width: 600px) {
+    .header-info {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--accent-color);
+}
+
+.contacts-list {
+    list-style: none;
+    margin-left: 0;
+}
+
+.contact-item {
+    margin-bottom: 0.5rem;
+}
+
+.contact-link {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.content-section {
+    margin-bottom: 2.5rem;
+}
+
+.section-title {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--bg-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: var(--accent-color);
+    transition: width 0.5s ease;
+}
+
+.content-section:hover .section-title::after {
+    width: 100%;
+}
+
+.skills-list {
+    list-style: square;
+    margin-left: 1.5rem;
+}
+
+.code-block {
+    background-color: #282c34;
+    color: #abb2bf;
+    padding: 1rem;
+    border-radius: 5px;
+    overflow-x: auto;
+    margin-top: 1rem;
+}
+
+.code-snippet {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.job-item {
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+    border-left: 3px solid var(--accent-color);
+}
+
+.job-meta, .education-meta {
+    font-style: italic;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.job-details {
+    list-style: disc;
+    margin-left: 2rem;
+}
+
+.projects-list {
+    list-style: square;
+    margin-left: 1.5rem;
+}
+
+.project-item {
+    margin-bottom: 1rem;
+}
+
+.subsection-title {
+    color: var(--primary-color);
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.education-item-detailed {
+    margin-bottom: 2rem;
+}
+
+.footer {
+    width: 95%;
+    max-width: var(--max-width);
+    background-color: var(--white);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer-link {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.rs-logo {
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.rs-logo:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 500px) {
+    .footer {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+}
