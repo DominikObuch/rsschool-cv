@@ -137,6 +137,38 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
+.job-item {
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+    border-left: 3px solid var(--accent-color);
+}
+
+.job-meta, .education-meta {
+    font-style: italic;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.job-details {
+    list-style: disc;
+    margin-left: 2rem;
+}
+
+.projects-list {
+    list-style: square;
+    margin-left: 1.5rem;
+}
+
+.project-item {
+    margin-bottom: 1rem;
+}
+
+.subsection-title {
+    color: var(--primary-color);
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
 .footer-container{
     display: flex;
     justify-content: space-between;
