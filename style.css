@@ -32,6 +32,18 @@
     padding: 2rem;
     margin-bottom: 2rem;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .header {
@@ -52,11 +64,13 @@
     text-decoration: none;
     color: var(--secondary-color);
     font-weight: bold;
-    transition: color 0.3s;
+    transition: color 0.3s, transform 0.3s;
+    display: inline-block;
 }
 
 .nav-link:hover {
     color: var(--accent-color);
+    transform: translateY(-2px);
 }
 
 .hero {
@@ -117,6 +131,23 @@
     border-bottom: 2px solid var(--bg-color);
     padding-bottom: 0.5rem;
     margin-bottom: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: var(--accent-color);
+    transition: width 0.5s ease;
+}
+
+.content-section:hover .section-title::after {
+    width: 100%;
 }
 
 .skills-list {
