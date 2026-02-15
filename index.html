@@ -55,6 +55,20 @@
                 <li class="skill-item">Methodologies: Agile, Scrum</li>
             </ul>
         </section>
+
+        <section id="code-example" class="content-section">
+            <h2 class="section-title">Code Example</h2>
+            <p class="section-text">
+                Solution for <a href="https://www.codewars.com/users/DominikObuch" target="_blank" class="contact-link">Sum of Digits / Digital Root</a> on Codewars:
+            </p>
+            <pre class="code-block"><code class="code-snippet">function digital_root(n) {
+  let ans = n.toString().split("").reduce((acc,num)=>{return acc + +num },0)
+  if(ans.toString().length>1){
+    return digital_root(ans)
+  }
+  return ans
+}</code></pre>
+        </section>
     </main>
 </body>
 </html>

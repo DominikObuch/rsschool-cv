@@ -124,6 +124,19 @@
     margin-left: 1.5rem;
 }
 
+.code-block {
+    background-color: #282c34;
+    color: #abb2bf;
+    padding: 1rem;
+    border-radius: 5px;
+    overflow-x: auto;
+    margin-top: 1rem;
+}
+
+.code-snippet {
+    font-family: 'Courier New', Courier, monospace;
+}
+
 .footer-container{
     display: flex;
     justify-content: space-between;
